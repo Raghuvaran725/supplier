@@ -1,10 +1,12 @@
 package com.cg.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class SupplierEntity {
   private String sname;
+  @Id
    private int sid;
    
    public SupplierEntity() {}

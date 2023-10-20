@@ -20,13 +20,13 @@ public class SupplierController {
 	@Autowired
 	private SupplierService service;
 	
-	@PostMapping("/")
+	@PostMapping("/post")
 	public String  addProduct(@RequestBody SupplierEntity s) {
 		return service.addSupplier(s);
 	}
 	
-	@GetMapping("/")
-	public List<SupplierEntity> getAll(@RequestParam("id") int id){
+	@GetMapping("/get")
+	public List<SupplierEntity> getAll(){
 		return service.getSupplierList();
 	}
 	
